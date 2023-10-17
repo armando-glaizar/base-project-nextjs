@@ -14,7 +14,7 @@ const HomePage = () => {
 
     return (
         <div>
-            <h1>Hola Mundo 1</h1>
+            <h1>Lista de Libros</h1>
             {
                 list.map((book) => (
                     <div>{book.title}</div>
