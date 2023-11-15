@@ -9,12 +9,12 @@ export default function Chat() {
     useEffect(() => {
         //Pusher.logToConsole = true;
 
-        const pusher = new Pusher('685398c6163be889d950', {
-            cluster: 'us2'
+        const pusher = new Pusher('', {
+            cluster: ''
         });
 
-        const channel = pusher.subscribe('grafica');
-        channel.bind('venta', function(data) {
+        const channel = pusher.subscribe('chat');
+        channel.bind('message', function(data) {
             setMessages([...messages, data]);
         });
     });
