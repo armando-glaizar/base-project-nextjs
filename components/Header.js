@@ -7,6 +7,7 @@ const HeaderComponent = () => {
             <menu>
                 <a href='/'>Home</a>
                 <Link href='/about'>About</Link>
+                <Link href='/chat'>Chat</Link>
             </menu>
         </nav>
     );
